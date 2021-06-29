@@ -30,6 +30,7 @@ quizButton.addEventListener('click', ()=>{
             score ++;
         }
         console.log(score);
+        results.textContent = `You got ${score} right!`;
     } else {
         console.log('user canceled');
     }
