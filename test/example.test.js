@@ -3,7 +3,7 @@
 import { isYes } from "../utils.js";
 
 const test = QUnit.test;
-test('shoudl return true for yes-y strings' assert => {
+test('should return true for yes-y strings' assert => {
     const yesString = isYes('yes');
     assert.equal(yesString, true);
 })

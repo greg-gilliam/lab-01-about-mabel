@@ -7,26 +7,26 @@
   // use user input to update state 
   // update DOM to reflect the new state
 
-const quizButton = document.getElementById("click-me");
-const results = document.getElementById("results");
+const quizButton = document.getElementById('click-me');
+const results = document.getElementById('results');
 
 quizButton.addEventListener('click', ()=>{
     const confirmed = confirm('Would you like to start the quiz?');
     console.log(confirmed);
     if (confirmed){
-        const name = prompt('what is your name?');
-        const ans1 = prompt('do I like sleeping?');
-        const ans2 = prompt('do I like squirrles?');
-        const ans3 = prompt('do I like the ups guy?');
+        const name = prompt('What is your name?');
+        const ans1 = prompt('Am I a dingo?');
+        const ans2 = prompt('What is my middle name?');
+        const ans3 = prompt('What thing do I love most?');
         console.log(name, ans1, ans2, ans3);
         let score = 0;
-        if(ans1 === 'y' || ans1 === 'YES' || ans1 === 'yasss') {
+        if (ans1 === 'n' || ans1 === 'NO' || ans1 === 'noooo') {
             score ++;
         }
-        if(ans2 === 'y' || ans2 === 'YES' || ans2 === 'yasss') {
+        if (ans2 === 'D' || ans2 === 'Dee' || ans2 === 'd') {
             score ++;
         }
-        if(ans3 === 'y' || ans3 === 'YES' || ans3 === 'yasss') {
+        if (ans3 === 'treats' || ans3 === 'TREATS' || ans3 === 'treats!') || ans3 === 'TREATS!') {
             score ++;
         }
         console.log(score);
