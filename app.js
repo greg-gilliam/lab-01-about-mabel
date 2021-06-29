@@ -17,9 +17,10 @@ quizButton.addEventListener('click', ()=>{
         const name = prompt('What is your name?');
         const ans1 = prompt('Am I a dingo?');
         const ans2 = prompt('What is my middle name?');
-        const ans3 = prompt('What thing do I love most?');
-        const ans4 = prompt('Am I a dog?');
-        console.log(name, ans1, ans2, ans3);
+        const ans3 = prompt('What do I love most?');
+        const ans4 = prompt('Is celery my favorite treat?');
+        const ans5 = prompt('Am I a dog?');
+        console.log(name, ans1, ans2, ans3, ans4, ans5);
         let score = 0;
         if (ans1 === 'n' || ans1 === 'NO' || ans1 === 'noooo') {
             score ++;
@@ -31,7 +32,11 @@ quizButton.addEventListener('click', ()=>{
             score ++;
         }
         if (ans4 === 'y' || ans4 === 'YES' || ans4 === 'Yassss') {
-          score ++;
+            score ++;
+        }
+        if (ans5 === 'y' || ans5 === 'YES' || ans5 === 'Yassss') {
+            score ++;
+        }
         console.log(score);
         results.textContent = `You got ${score} right!`;
     } else {
