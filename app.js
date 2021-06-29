@@ -26,7 +26,7 @@ quizButton.addEventListener('click', ()=>{
         if (ans2 === 'y' || ans2 === 'YES' || ans2 === 'Yassss' || ans2 === 'yes') {
             score ++;
         }
-        if (ans3 === 'y' || ans3 === 'YES' || ans3 === 'Yassss'|| ans2 === 'yes') {
+        if (ans3 === 'y' || ans3 === 'YES' || ans3 === 'Yassss' || ans3 === 'yes') {
             score ++;
         }
         console.log(score);
