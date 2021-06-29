@@ -18,6 +18,7 @@ quizButton.addEventListener('click', ()=>{
         const ans1 = prompt('Am I a dingo?');
         const ans2 = prompt('What is my middle name?');
         const ans3 = prompt('What thing do I love most?');
+        const ans4 = prompt('Am I a dog?');
         console.log(name, ans1, ans2, ans3);
         let score = 0;
         if (ans1 === 'n' || ans1 === 'NO' || ans1 === 'noooo') {
@@ -29,6 +30,8 @@ quizButton.addEventListener('click', ()=>{
         if (ans3 === 'treats' || ans3 === 'TREATS' || ans3 === 'treats!' || ans3 === 'TREATS!') {
             score ++;
         }
+        if (ans4 === 'y' || ans4 === 'YES' || ans4 === 'Yassss') {
+          score ++;
         console.log(score);
         results.textContent = `You got ${score} right!`;
     } else {
