@@ -9,3 +9,11 @@
 8) Consider your data model. What objects will you be using? What are the key/value pairs? What arrays do you need? What needs to live in local storage?
 9) Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.
 
+
+My plan:
+
+1) set up the basic order of the app
+2) add photo to assets
+3) add GENERAL Y/N questions
+4) set up the results
+5) work on style (font, background color, etc) 
