@@ -18,7 +18,8 @@ quizButton.addEventListener('click', ()=>{
         const ans1 = prompt('Am I a dingo?');
         const ans2 = prompt('Is celery my favorite treat?');
         const ans3 = prompt('Am I a dog?');
-        console.log(name, ans1, ans2, ans3);
+        const ans4 = prompt('Do we think I am a kelpie mutt?');
+        console.log(name, ans1, ans2, ans3, ans4);
         let score = 0;
         if (ans1 === 'n' || ans1 === 'NO' || ans1 === 'noooo' || ans1 === 'no') {
             score ++;
@@ -29,6 +30,9 @@ quizButton.addEventListener('click', ()=>{
         if (ans3 === 'y' || ans3 === 'YES' || ans3 === 'Yassss' || ans3 === 'yes') {
             score ++;
         }
+        if (ans4 === 'y' || ans4 === 'YES' || ans4 === 'Yassss' || ans4 === 'yes') {
+          score ++;
+      }
         console.log(score);
         results.textContent = `You got ${score} right!`;
     } else {
