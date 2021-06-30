@@ -31,8 +31,8 @@ quizButton.addEventListener('click', ()=>{
             score ++;
         }
         if (ans4 === 'y' || ans4 === 'YES' || ans4 === 'Yassss' || ans4 === 'yes') {
-          score ++;
-      }
+            score ++;
+        }
         console.log(score);
         results.textContent = `You got ${score} right!`;
     } else {
